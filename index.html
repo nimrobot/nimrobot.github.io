@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0; URL=https://nimrobotics.com">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; URL=https://nimrobotics.com/">
+    <script>
+        var currentUrl = window.location.href;
+        var newUrl = currentUrl.replace('https://aakash.bio/', 'https://nimrobotics.com/');
+        if (newUrl !== window.location.href) {
+            window.location.replace(newUrl);
+        }
+    </script>
 </head>
 <body>
-    Redirecting you to https://nimrobotics.com/
+    Redirecting you to <a href="https://nimrobotics.com/">https://nimrobotics.com/</a>...
 </body>
 </html>
