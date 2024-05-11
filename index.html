@@ -2,13 +2,20 @@
 <html>
 <head>
     <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; URL=https://nimrobotics.com/">
     <script>
-        var currentUrl = window.location.href;
-        var newUrl = currentUrl.replace('https://aakash.bio/', 'https://nimrobotics.com/');
-        if (newUrl !== window.location.href) {
-            window.location.replace(newUrl);
+        // Function to extract the path from the current URL
+        function getPath() {
+            return window.location.pathname;
         }
+
+        // Function to redirect
+        function redirect() {
+            var newPath = getPath(); // Get the current path
+            window.location.href = "https://nimrobotics.com" + newPath; // Redirect to the new domain with the same path
+        }
+
+        // Automatically redirect after a certain delay
+        setTimeout(redirect, 0);
     </script>
 </head>
 <body>
